@@ -12,8 +12,27 @@
 		<application.author>Frederik Borutta</application.author>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<project.scm.id>github</project.scm.id>
 	</properties>
-	
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://localhost:8081/repository/maven-releases/</url>
+		</repository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:git:https://github.com/Fred1589/keygen.git</connection>
+		<developerConnection>scm:git:https://github.com/Fred1589/keygen.git</developerConnection>
+		<url>http://github.com/Fred1589/keygen</url>
+		<tag>HEAD</tag>
+	</scm>
+
 	<build>
 		<finalName>aes-keygen</finalName>
 

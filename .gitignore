@@ -3,3 +3,5 @@
 .project
 /target
 keyfile
+pom.xml.releaseBackup
+release.properties
